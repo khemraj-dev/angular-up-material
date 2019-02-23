@@ -3,14 +3,39 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppNavComponent } from './app-nav/app-nav.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule,
+  MatIconModule, MatListModule, MatGridListModule, MatCardModule,
+  MatMenuModule, MatTableModule, MatPaginatorModule, MatSortModule
+} from '@angular/material';
+import { AppDashboardComponent } from './app-dashboard/app-dashboard.component';
+import { AppTableComponent } from './app-table/app-table.component';
 
-@NgModule({
+@ NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AppNavComponent,
+    AppDashboardComponent,
+    AppTableComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]
